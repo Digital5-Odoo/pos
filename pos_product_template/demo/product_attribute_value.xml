@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+##############################################################################
+#
+#    Point Of Sale - Product Template module for Odoo
+#    Copyright (C) 2014-Today Akretion (http://www.akretion.com)
+#    @author Sylvain LE GAL (https://twitter.com/legalsylvain)
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+-->
+<odoo>
+    <data noupdate="1">
+        <record id="product_attribute_seat_pillow" model="product.attribute">
+            <field name="name">Seat Pillow</field>
+            <field name="sequence">10</field>
+        </record>
+        <record
+            id="product_attribute_value_seat_pillow_1"
+            model="product.attribute.value"
+        >
+            <field name="name">No pillow</field>
+            <field name="attribute_id" ref="product_attribute_seat_pillow" />
+            <field name="sequence">1</field>
+        </record>
+        <record
+            id="product_attribute_value_seat_pillow_2"
+            model="product.attribute.value"
+        >
+            <field
+                name="name"
+            >Fluffy pillow (example of really long attribute name)</field>
+            <field name="attribute_id" ref="product_attribute_seat_pillow" />
+            <field name="sequence">2</field>
+        </record>
+        <record
+            id="product_attribute_value_seat_pillow_3"
+            model="product.attribute.value"
+        >
+            <field name="name">Hard pillow</field>
+            <field name="attribute_id" ref="product_attribute_seat_pillow" />
+            <field name="sequence">3</field>
+        </record>
+        <record
+            id="product_attribute_value_seat_pillow_4"
+            model="product.attribute.value"
+        >
+            <field name="name">Semi-hard pillow</field>
+            <field name="attribute_id" ref="product_attribute_seat_pillow" />
+            <field name="sequence">4</field>
+        </record>
+        <record
+            id="product_attribute_value_seat_pillow_5"
+            model="product.attribute.value"
+        >
+            <field name="name">Ultra-soft pillow</field>
+            <field name="attribute_id" ref="product_attribute_seat_pillow" />
+            <field name="sequence">5</field>
+        </record>
+
+        <record id="product_attribute_wheels" model="product.attribute">
+            <field name="name">Wheels (example long attribute name)</field>
+            <field name="sequence">10</field>
+        </record>
+        <record id="product_attribute_value_wheels_1" model="product.attribute.value">
+            <field name="name">No wheels</field>
+            <field name="attribute_id" ref="product_attribute_wheels" />
+            <field name="sequence">4</field>
+        </record>
+        <record id="product_attribute_value_wheels_2" model="product.attribute.value">
+            <field name="name">Steel wheels</field>
+            <field name="attribute_id" ref="product_attribute_wheels" />
+            <field name="sequence">4</field>
+        </record>
+        <record id="product_attribute_value_wheels_3" model="product.attribute.value">
+            <field name="name">Carbon wheels</field>
+            <field name="attribute_id" ref="product_attribute_wheels" />
+            <field name="sequence">4</field>
+        </record>
+        <record id="product_attribute_value_wheels_4" model="product.attribute.value">
+            <field name="name">Adamantium wheels</field>
+            <field name="attribute_id" ref="product_attribute_wheels" />
+            <field name="sequence">4</field>
+        </record>
+        <record id="product_attribute_value_wheels_5" model="product.attribute.value">
+            <field name="name">Plastic wheels</field>
+            <field name="attribute_id" ref="product_attribute_wheels" />
+            <field name="sequence">4</field>
+        </record>
+
+        <record id="product_attribute_backrest" model="product.attribute">
+            <field name="name">Back rest</field>
+            <field name="sequence">10</field>
+        </record>
+        <record id="product_attribute_value_backrest_1" model="product.attribute.value">
+            <field name="name">Hard back rest</field>
+            <field name="attribute_id" ref="product_attribute_backrest" />
+            <field name="sequence">4</field>
+        </record>
+        <record id="product_attribute_value_backrest_2" model="product.attribute.value">
+            <field name="name">Flexible back rest</field>
+            <field name="attribute_id" ref="product_attribute_backrest" />
+            <field name="sequence">4</field>
+        </record>
+        <record id="product_attribute_value_backrest_3" model="product.attribute.value">
+            <field name="name">Semi-flexible back rest</field>
+            <field name="attribute_id" ref="product_attribute_backrest" />
+            <field name="sequence">4</field>
+        </record>
+    </data>
+</odoo>

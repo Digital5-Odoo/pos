@@ -1,0 +1,159 @@
+/******************************************************************************
+    Point Of Sale - Product Template module for Odoo
+    Copyright (C) 2014-Today Akretion (http://www.akretion.com)
+    @author Sylvain LE GAL (https://twitter.com/legalsylvain)
+
+    Some part of code from Odoo Project,
+    Copyright (C) 2004-Today Odoo SA. (<http://odoo.com>).
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+******************************************************************************/
+.pos .attribute-section {
+    position: relative;
+    display: flex;
+    vertical-align: top;
+}
+
+.pos .popup-template .attribute-name {
+    flex-basis: 20%;
+    font-weight: normal;
+}
+
+.pos .popup-template .attribute-value {
+    flex-basis: 60%;
+    display: flex;
+    height: 40px;
+    flex-grow: 3;
+    text-align: center;
+    border-radius: 2px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 1px rgba(60, 60, 60, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    align-items: center;
+}
+
+.pos .popup-template .attribute-placeholder {
+    flex-basis: 60%;
+    display: flex;
+    flex-grow: 3;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.pos .popup-template .attribute-chevron {
+    flex-basis: 10%;
+}
+
+.pos .popup-template .attribute-empty {
+    flex-basis: 10%;
+}
+
+.pos .popup-template .attribute-selector-container {
+    flex-basis: 80%;
+}
+
+.pos .popup-template .attribute-selector.inactive {
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.pos .popup-template .attribute-selector {
+    flex-grow: 3;
+}
+
+.pos .popup-template .attribute-button {
+    display: flex;
+    height: 40px;
+    flex-grow: 3;
+    text-align: center;
+    border-radius: 2px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 1px rgba(60, 60, 60, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    align-items: center;
+}
+
+.pos .popup-template .attribute-button:active {
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.pos .popup-template .attribute-value:active {
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.pos .popup-template .attribute-item {
+    justify-content: center;
+    display: flex;
+}
+
+.pos .popup-template .button {
+    margin-right: normal;
+}
+
+@keyframes popup-template-av-slidein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.pos .popup-template .attribute-values {
+    animation-name: popup-template-av-slidein;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.pos .popup-template .attribute-value {
+    display: flex;
+    justify-content: center;
+}
+
+.pos .popup-template .attribute-value.selectable {
+}
+
+.pos .popup-template .attribute-value.not_selectable {
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.pos .popup-template .empty-spacing-left {
+    flex-basis: 10%;
+}
+
+.pos .popup-template .empty-spacing-right {
+    flex-basis: 10%;
+}
+
+.pos .popup-template .empty-spacing-item-left {
+    flex-basis: 30%;
+}
+
+.pos .popup-template .empty-spacing-item-right {
+    flex-basis: 30%;
+}
+
+.pos .popup-template .button.not_selectable {
+    color: rgba(128, 128, 128, 0.5);
+}
