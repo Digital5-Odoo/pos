@@ -7,10 +7,10 @@
         t-inherit-mode="extension"
         owl="1"
     >
-        <xpath expr="//div[hasclass('product-img')]" position="before">
+        <xpath expr="//span[hasclass('price-tag')]" position="after">
             <span
                 t-if="env.pos.config.display_quick_product_info"
-                class="quick-info"
+                class="price-tag quick-info"
                 t-on-click="onProductInfoClick"
             >
                 <i
