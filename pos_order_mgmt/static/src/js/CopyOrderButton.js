@@ -34,10 +34,10 @@ odoo.define("pos_order_mgmt.CopyOrderButton", function (require) {
             }
 
             // Get fiscal position
-            if (copy_order.fiscal_position && pos.fiscal_positions) {
+            if (copy_order.fiscal_position && copy_order.fiscal_position["id"] && pos.fiscal_positions) {
                 var fiscal_positions = pos.fiscal_positions;
                 order.fiscal_position = fiscal_positions.filter(function (p) {
-                    return p.id === copy_order.fiscal_position;
+                    return p.id === copy_order.fiscal_position["id"];
                 })[0];
                 order.trigger("change");
             }

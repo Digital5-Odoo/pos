@@ -36,10 +36,10 @@ odoo.define("pos_order_mgmt.RefundOrderButton", function (require) {
             }
 
             // Get fiscal position
-            if (refund_order.fiscal_position && pos.fiscal_positions) {
+            if (refund_order.fiscal_position && refund_order.fiscal_position["id"] && pos.fiscal_positions) {
                 var fiscal_positions = pos.fiscal_positions;
                 order.fiscal_position = fiscal_positions.filter(function (p) {
-                    return p.id === refund_order.fiscal_position;
+                    return p.id === refund_order.fiscal_position["id"];
                 })[0];
                 order.trigger("change");
             }
